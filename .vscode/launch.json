@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReadFromFileUsingScanner",
+            "request": "launch",
+            "mainClass": "ReadFromFileUsingScanner"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - guessMovie",
+            "request": "launch",
+            "mainClass": "guessMovie"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld"
+        }
+    ]
+}
