@@ -1,9 +1,11 @@
 import java.rmi.server.RMISocketFactory;
 import java.util.Scanner;
-class Item
-{
+public class Item {
     String name;
     int weight;
+}
+public Item(){
+    name=U1;
 }
 interface Spaceship
 {
