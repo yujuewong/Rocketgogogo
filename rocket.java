@@ -1,14 +1,19 @@
 import java.rmi.server.RMISocketFactory;
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.zip.ZipEntry;
+
 public class Item {
     String name;
     int weight;
+
+    public Item(String name_, int weight_) {
+        name = name_;
+        weight = weight_;
+    }
 }
-public Item(){
-    name=U1;
-}
-interface Spaceship
-{
+
+interface Spaceship {
 
     public boolean lanch();
 
@@ -19,14 +24,13 @@ interface Spaceship
     public void carry(Item item);
 
 }
-class Rocket implements Spaceship
-{
-    public boolean lanch()
-    {
+
+class Rocket implements Spaceship {
+    public boolean lanch() {
         return true;
     }
-    public boolean land()
-    {
+
+    public boolean land() {
         return true;
     }
 
@@ -39,39 +43,39 @@ class Rocket implements Spaceship
     public void carry(Item item) {
 
     }
-} 
-class U1 extends Rocket
-{
+}
+
+class U1 extends Rocket {
     @Override
     public boolean lanch() {
     }
 
     @Override
-    public boolean land()
-    {
+    public boolean land() {
         return;
     }
 }
-class U2 extends Rocket
-{
+
+class U2 extends Rocket {
     @Override
-    public boolean lanch()
-    {
-        return ;
+    public boolean lanch() {
+        return;
     }
 
     @Override
-    public boolean land()
-    {
+    public boolean land() {
         return;
     }
 }
+
 class Simulation {
-     File file = new File("phase1");
-     Scanner loadItems = new Scanner(file);
-     Arraylist<String> list=new Arraylist<String>();
-     while (loadItems.hasNext()){
-         list.add(loadItems,next());
-     }
-     loadItems.close();
+    public ArrayList<Item> LoadItems(String address) {
+    }
+    public ArrayList<Item> LoadU1(ArraList<Item> items) {
+    }
+    public ArrayList<Item> LoadU2(ArraList<Item> items) {
+    }
+    public int runSimulation(Arraylist<rocket> rocket) {
+    }
+    
 }
