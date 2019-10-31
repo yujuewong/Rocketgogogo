@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.rmi.server.RMISocketFactory;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -69,13 +71,27 @@ class U2 extends Rocket {
 }
 
 class Simulation {
-    public ArrayList<Item> LoadItems(String address) {
+    public ArrayList<Item> LoadItems(String address) throws FileNotFoundException {
+        String fileName = "phase_1.txt";
+        File f = new File("phase_1.txt");
+        Scanner sc = new Scanner(f);
+        ArrayList<Item> LoadItems= new ArrayList<Item>();
+
+        while (sc.hasNextLine()){
+            String line= sc.nextLine();
+            String[] details= line.split("=");
+            String name= details[0];
+            int weight = Integer.parseInt(details[1]);
+            Item items= new Item(String name_, int weight_);
+            LoadItems.add (items);
+        }
+        sc.close();
     }
     public ArrayList<Item> LoadU1(ArraList<Item> items) {
     }
     public ArrayList<Item> LoadU2(ArraList<Item> items) {
     }
-    public int runSimulation(Arraylist<rocket> rocket) {
+    public int runSimulation(Arraylist<rocket> rockets) {
     }
     
 }
