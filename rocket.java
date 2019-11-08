@@ -28,6 +28,9 @@ interface Spaceship {
 }
 
 class Rocket implements Spaceship {
+    private int rocketWeight;
+    private int rocketCost;
+    private int maxWeigtWithCargo;
     public boolean lanch() {
         return true;
     }
@@ -38,6 +41,7 @@ class Rocket implements Spaceship {
 
     @Override
     public boolean canCarry(Item item) {
+        if int weight + int rocketWeight > int maxWeigtWithCargo;
         return false;
     }
 
@@ -86,8 +90,11 @@ class Simulation {
             LoadItems.add (items);
         }
         sc.close();
+        return LoadItems;
     }
     public ArrayList<Item> LoadU1(ArraList<Item> items) {
+        ArrayList<Item> LoadU1= new ArrayList<Item>();
+
     }
     public ArrayList<Item> LoadU2(ArraList<Item> items) {
     }
