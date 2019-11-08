@@ -41,8 +41,10 @@ class Rocket implements Spaceship {
 
     @Override
     public boolean canCarry(Item item) {
-        if int weight + int rocketWeight > int maxWeigtWithCargo;
+        if (item.weight+rocketWeight > maxWeigtWithCargo);
         return false;
+        else
+        return true;
     }
 
     @Override
