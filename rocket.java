@@ -41,7 +41,7 @@ class Rocket implements Spaceship {
 
     @Override
     public boolean canCarry(Item item) {
-        if (item.weight+rocketWeight > maxWeigtWithCargo);
+        if (item.weight+rocketWeight > maxWeigtWithCargo)
         return false;
         else
         return true;
@@ -49,7 +49,7 @@ class Rocket implements Spaceship {
 
     @Override
     public void carry(Item item) {
-
+      rocketWeight  = item.weight + rocketWeight;
     }
 }
 
@@ -95,7 +95,12 @@ class Simulation {
         return LoadItems;
     }
     public ArrayList<Item> LoadU1(ArraList<Item> items) {
+        Rockect = new Rocket;
+		if( Rockect.canCarry return true){
+            
+        }
         ArrayList<Item> LoadU1= new ArrayList<Item>();
+
 
     }
     public ArrayList<Item> LoadU2(ArraList<Item> items) {
